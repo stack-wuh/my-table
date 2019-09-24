@@ -2,7 +2,7 @@
   <section class='c-table-header'>
     <div class="b-outer">
       <div class="b-left">
-        <span class="el-icon-s-operation b-left__title">表格名字</span>
+        <span class="el-icon-s-operation b-left__title">{{name}}</span>
       </div>
       <div class="b-right">
         <slot name='right'></slot>
@@ -15,7 +15,9 @@
  export default{
   name: 'WTableHeader',
   components: {},
-  props: {},
+  props: {
+    name: String
+  },
   watch: {},
   computed: {},
   data(){

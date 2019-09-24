@@ -11,7 +11,7 @@
         border 
         stripe
         :isShowPrefix='show'>
-          <MyTableHeader slot="header">
+          <MyTableHeader name="测试列表" slot="header">
             <search-group slot='right' :list="List" v-model="searchForm"></search-group>
           </MyTableHeader>
       </my-table>

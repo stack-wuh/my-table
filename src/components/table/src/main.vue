@@ -179,6 +179,14 @@
 .c-table {
   width: inherit;
   height: inherit;
-  min-height: 400px;
+  // min-height: 400px;
+}
+.b-footer {
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  border-top: none;
 }
 </style>
