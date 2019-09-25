@@ -3,7 +3,7 @@ var webpack = require('webpack')
 var NODE_ENV = process.env.NODE_ENV
 
 module.exports = {
-  entry: NODE_ENV == 'development' ? './src/main.js' : './src/components/index.js',
+  entry: NODE_ENV === 'development' ? './src/main.js' : './src/components/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',

@@ -44,7 +44,8 @@ const List = [
     list: [
       {
         text: 'export',
-        type: 'success'
+        type: 'success',
+
       },
       {
         text: 'import',
@@ -131,7 +132,9 @@ export default {
           list: [
             {
               text: 'create',
-              ref: 'create'
+              ref: 'create',
+              field: ['status'],
+              rules: 1
             },
             {
               text: 'delete',
@@ -141,8 +144,8 @@ export default {
         }
       ],
       data: [
-        { status: 1, state: 1, name: 'shadow', age: 20, img: ['https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjc8_L62-jkAhVPrJ4KHWAVBUQQjRx6BAgBEAQ&url=https%3A%2F%2Ftwitter.com%2Fimgafootball&psig=AOvVaw16dW5chATrNehYu_tWf0un&ust=1569389015648085']},
-        { status: 2, state: 0, name: 'fielding', age: 40, img: 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjc8_L62-jkAhVPrJ4KHWAVBUQQjRx6BAgBEAQ&url=https%3A%2F%2Ftwitter.com%2Fimgafootball&psig=AOvVaw16dW5chATrNehYu_tWf0un&ust=1569389015648085'}
+        { info: { status: 2 }, status: 1, state: 1, name: 'shadow', age: 20, img: ['https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjc8_L62-jkAhVPrJ4KHWAVBUQQjRx6BAgBEAQ&url=https%3A%2F%2Ftwitter.com%2Fimgafootball&psig=AOvVaw16dW5chATrNehYu_tWf0un&ust=1569389015648085']},
+        { info: { status: 1 },status: 2, state: 0, name: 'fielding', age: 40, img: 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjc8_L62-jkAhVPrJ4KHWAVBUQQjRx6BAgBEAQ&url=https%3A%2F%2Ftwitter.com%2Fimgafootball&psig=AOvVaw16dW5chATrNehYu_tWf0un&ust=1569389015648085'}
       ],
       msg: 'Welcome to Your Vue.js App'
     }

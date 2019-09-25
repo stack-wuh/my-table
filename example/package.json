@@ -32,6 +32,6 @@
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1",
     "wh-search-group": "0.0.4-c",
-    "wh-table-group": "0.0.1"
+    "wh-table-group": "0.0.1-b"
   }
 }

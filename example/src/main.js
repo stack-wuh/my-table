@@ -8,7 +8,6 @@ import MyTable from 'wh-table-group'
 Vue.use(ElementUI)
 Vue.use(MySearch)
 Vue.use(MyTable)
-console.log(MyTable)
 
 new Vue({
   el: '#app',

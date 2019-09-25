@@ -93,7 +93,14 @@
                 :prop='tr.field'
                 align='center'>
                   <template slot-scope='scope'>
-                      <btnGroup v-on="$listeners" align='center' :list='JSON.parse(JSON.stringify(tr.list))' :scope="scope" style="text-align: center"></btnGroup>
+                      <btnGroup 
+                        v-on="$listeners" 
+                        align='center' 
+                        :list='JSON.parse(JSON.stringify(tr.list))' 
+                        :scope="scope"
+                        :data="scope.row" 
+                        style="text-align: center">
+                      </btnGroup>
                   </template>
               </el-table-column>
             </div>
