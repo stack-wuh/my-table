@@ -19,9 +19,10 @@ const btnList = [
     text: 'down',
     ref: 'down',
     backgroundColor: '#fcc',
-    field: ['states', 'state'],
-    rules: [1],
-    loading: false
+    options: {
+      isLoading: false,
+      type: 'text'
+    }
   },
   {
     _id: 1,
@@ -29,16 +30,20 @@ const btnList = [
     ref: 'up',
     type: 'text',
     color: 'red',
-    field: ['states', 'state'],
-    rules: [2],
-    loading: false
+    options: {
+      isLoading: false,
+      type: 'text',
+    },
+    validator: (data) => {
+      return false
+    }
   },
   {
     _id: 2,
     text: 'show',
-    field: ['states', 'state'],
-    rules: [1],
-    loading: false
+    options: {
+      isLoading: true
+    }
   }
 ]
 export default {

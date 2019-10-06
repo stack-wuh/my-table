@@ -93,14 +93,14 @@
                 :prop='tr.field'
                 align='center'>
                   <template slot-scope='scope'>
-                      <btnGroup 
+                      <my-search-button-group 
                         v-on="$listeners" 
                         align='center' 
                         :list='JSON.parse(JSON.stringify(tr.list))' 
                         :scope="scope"
                         :data="scope.row" 
                         style="text-align: center">
-                      </btnGroup>
+                      </my-search-button-group>
                   </template>
               </el-table-column>
             </div>
@@ -114,11 +114,9 @@
 </template>
 
 <script>
- import mySearch from 'wh-search-group'
  export default{
   name: 'WTable',
   components: {
-    btnGroup: mySearch.MySearchButtonGroup
   },
   props: {
     data: {

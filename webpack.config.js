@@ -13,7 +13,8 @@ module.exports = {
     umdNamedDefine: true
   },
   externals: {
-    elementUI: 'element-ui'
+    elementUI: 'element-ui',
+    SearchGroup: 'wh-search-group'
   },
   module: {
     rules: [
