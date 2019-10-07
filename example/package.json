@@ -31,7 +31,7 @@
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1",
-    "wh-search-group": "0.0.5",
-    "wh-table-group": "0.0.1-c"
+    "wh-search-group": "0.0.5-c",
+    "wh-table-group": "0.0.1-d"
   }
 }

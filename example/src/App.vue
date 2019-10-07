@@ -20,9 +20,10 @@ const btnList = [
     ref: 'down',
     backgroundColor: '#fcc',
     options: {
-      isLoading: true,
+      isLoading: false,
       type: 'text'
-    }
+    },
+    validator: true
   },
   {
     _id: 1,
@@ -35,7 +36,7 @@ const btnList = [
       type: 'text',
     },
     validator: (data) => {
-      return false
+      return true
     }
   },
   {
@@ -137,11 +138,21 @@ export default {
               options: {
                 isLoading: false,
                 type: 'text'
+              },
+              validator: (data) => {
+                let { data: { state } } = data
+                return state === true
               }
             },
             {
               text: 'delete',
-              ref: 'del'
+              ref: 'del',
+              color: 'red',
+              options: {
+                isLoading: false,
+                type: 'text'
+              },
+              validator: true
             }
           ]
         }
