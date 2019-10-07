@@ -20,7 +20,7 @@ const btnList = [
     ref: 'down',
     backgroundColor: '#fcc',
     options: {
-      isLoading: false,
+      isLoading: true,
       type: 'text'
     }
   },
@@ -31,7 +31,7 @@ const btnList = [
     type: 'text',
     color: 'red',
     options: {
-      isLoading: false,
+      isLoading: true,
       type: 'text',
     },
     validator: (data) => {
@@ -134,8 +134,10 @@ export default {
             {
               text: 'create',
               ref: 'create',
-              field: ['info', 'state'],
-              rules: [true, 1, 0, 2]
+              options: {
+                isLoading: false,
+                type: 'text'
+              }
             },
             {
               text: 'delete',

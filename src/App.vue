@@ -131,14 +131,27 @@ export default {
           type: 'button',
           list: [
             {
+              _id: 0,
               text: 'create',
               ref: 'create',
-              field: ['status'],
-              rules: 1
+              options: {
+                isLoading: true,
+                type: 'text'
+              },
+              validator: (data) => {
+                let { data: { age } } = data
+                return age === 40
+              }
             },
             {
+              _id: 1,
               text: 'delete',
-              ref: 'delete'
+              ref: 'del',
+              options: {
+                isLoading: false,
+                type: 'text'
+              },
+              validator: true
             }
           ]
         }
