@@ -93,10 +93,11 @@
                 :prop='tr.field'
                 align='center'>
                   <template slot-scope='scope'>
-                      <my-search-button-group 
-                        v-on="$listeners" 
+                      <my-search-button-group
+                        :key="scope.$index"
+                        v-on="$listeners"
                         align='center' 
-                        :list='JSON.parse(JSON.stringify(tr.list))' 
+                        :list='tr.list'
                         :scope="scope"
                         :data="scope.row" 
                         style="text-align: center">
